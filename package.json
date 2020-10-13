@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "test": "node tests/*.js",
+    "build": "npm run test && parcel build pages/index.html"
     "start": "next start"
   },
   "dependencies": {
